@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(240, 239, 234);
+}
+
+header {
+    color: white;
+    padding: 0px;
+}
+
+#home {
+    background-image: url(image/imgonline-com-ua-Resize-3WGwn5fzRa3.jpg);
+    text-align: center;
+    margin-top: 4rem;
+    padding: 30rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 3rem 2rem 3rem 2rem;
+    background-color: rgb(173, 166, 166);
+}
+
+.header>* {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    padding: 1rem;
+}
