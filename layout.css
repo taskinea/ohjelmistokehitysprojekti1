@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Domine', serif;
     font-size: 1.6rem;
-    background-color: rgb(240, 239, 234);
+    background-color: #e3eaf0;
 }
 
 header {
@@ -13,11 +15,21 @@ header {
     padding: 0px;
 }
 
+figure {
+    display: block;
+}
+figure img {
+    max-width: 100%;
+}
+#logo {
+    max-width: 100%;
+    height: 100px;
+}
+
 #home {
-    background-image: url(images/imgonline-com-ua-Resize-3WGwn5fzRa3.jpg);
     text-align: center;
-    margin-top: 4rem;
     padding: 30rem;
+    background-image: url(images/imgonline-com-ua-Resize-3WGwn5fzRa3.jpg);
 }
 
 .header {
@@ -28,14 +40,168 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100px;
     color: white;
-    padding: 3rem 2rem 3rem 2rem;
-    background-color: rgb(173, 166, 166);
+    background-color: #acb4bebe;
 }
 
 .header>* {
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
-    padding: 1rem;
+}
+header li {
+    padding-top: 40px;
+}
+a {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.opacity {
+    color: black;
+    background-color: #acb4be93;
+    padding: 50px;
+    line-height: 2;  
+    border-radius: 25px;
+    display: inline-block;
+}
+.opacity h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* HERE STARTS ILMOITTAUTUMINEN FORM CSS RULES */
+
+#ilmoittautuminen {
+    margin: 10px;
+    padding-top: 10px;
+}
+#ilmoittautuminen h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+h3 {
+	text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#red {
+    color: red;
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+    color: black;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+.footerText {
+    color: white;
+    text-align: center;
+}
+
+/*Annas CSS footer rules*/
+footer {
+    background-color: white;
+    padding-top: 30px;
+    display: block;
+}
+footer h1 {
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+footer p {
+    padding-top: 25px;
+}
+footer figure img {
+    max-width: 50%;
+}
+.forFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.forFlex > * {
+    flex-grow: 1;
+    flex-basis: 45%;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+#somet {
+    padding-bottom: 40px;
+    letter-spacing: 20px;
+    color: #2a86d1;
+    padding-top: 20px;
 }
