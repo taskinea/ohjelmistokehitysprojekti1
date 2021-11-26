@@ -1,156 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasten laskettelukoulu</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="layout.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-</head>
+    <!-- 1.Bootstrapin css säännöt suoritetaan ensin-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div>
-        <header>
-            <ul class="header">
-                <figure>
-                    <img id="logo" src="./images/lasten-laskettelukoulu-logo.png" alt="lasten laskettelukoulun logo">
-                </figure>    
-                <li>
-                    <a href="#home">Home</a>
-                <li>
-                    <a href="#ilmoittautuminen">Ilmoittautuminen</a>
-                </li>
-                <li>
-                    <a href="#välinevuokra">Välinevuokra</a>
-                </li>
-                <li>
-                    <a href="#yhteystiedot">Yhteystiedot</a>
-                </li>
-            </ul>
-        </header>
+      <header>
+        <ul class="header">
+          <figure>
+            <img
+              id="logo"
+              src="./images/lasten-laskettelukoulu-logo.png"
+              alt="lasten laskettelukoulun logo"
+            />
+          </figure>
+          <li>
+            <a href="#info">Info</a>
+          </li>
+          <li>
+            <a href="#ilmoittautuminen">Ilmoittautuminen</a>
+          </li>
+          <li>
+            <a href="#välinevuokra">Välinevuokra</a>
+          </li>
+          <li>
+            <a href="#yhteystiedot">Yhteystiedot</a>
+          </li>
+        </ul>
+      </header>
     </div>
     <section id="home">
-        <div class="opacity">
-            <h1>LASTEN LASKETTELUKOULU</h1>
-            <h2>Tule mukaan viettämään ikimuistoinen hiihtoloma</h2>
-        </div>
+      <div class="opacity">
+        <h1>LASTEN LASKETTELUKOULU</h1>
+        <h2>Tule mukaan viettämään ikimuistoinen hiihtoloma</h2>
+      </div>
     </section>
+    <section id="info">
+      <h3>
+        Lasten Laskettelukoulu järjestetään hiihtolomaviikolla 8, 21.2.2022 –
+        25.2.2021, Peuramaan hiihtokeskuksessa, Kirkkonummella ja sopii 5-7
+        vuotiaille aloittelijoille. Laskettelukoulu on maanantaista perjantaihin
+        klo 09.30-12.00. Hinta on 290e ja hintaan sisältyy rinnelippu
+        opetustuntien ajaksi sekä tapaturmavakuutus. Laskettelukouluun voi
+        osallistua omilla välineillä tai vuokraamalla viikoksi alennettuun
+        hintaan välinevuokraamosta.
+      </h3>
+    </section>
+    <hr />
 
     <section id="ilmoittautuminen">
-        <h1 align="center">Ilmoittautuminen</h1>
-        <div class="container">
-            <form action="#" name="contact_form">
-                <label for="first_name">Ilmoittautujan nimi <span id="red">*</span></label>
-                <input name="first_name" type="text" required placeholder="Etunimi Sukunimi"/>
-                <br>
-                <label for="last_name">Huoltajan nimi <span id="red">*</span></label>
-                <input name="last_name" type="text" required placeholder="Huoltajan Etunimi Sukunimi"/>
-                <br>
-                <label for="email">Huoltajan sähköposti <span id="red">*</span></label>
-                <input name="email" type="email" required placeholder="matti.meikalainen@esimerkki.com"/>
-                <br>
-                <label for="email">Huoltajan puhelinnumero <span id="red">*</span></label>
-                <input name="email" type="email" required placeholder="0451234567"/>
-                <br>
-                <label for="email">Osoite <span id="red">*</span></label>
-                <input name="email" type="email" required placeholder="Katuosoite"/>
-                <input name="email" type="email" required placeholder="Postinumero ja toimipaikka"/>
-                <br>
-                <label for="email">Ilmoittautujan ikä <span id="red">*</span></label>
-                <input name="email" type="email" required placeholder="Ikä"/>
-                <br>
-                <div class="center">
-                    <input type="submit" value="Lähetä">
-                </div>
-            </form>	
-        </div>
-    </section>
-    <!-- väline vuokra -->
-    <section class="väline_vuokra">
-        <h1 class="väline_vuokra_heading">Väline Vuokra</h1>
-        <form action="/" id="väline_vuokra_form">
-            <label for="huoltajan_sähköposti" class="huoltajan">Huoltajan sähköposti <span class="star">*</span>:</label>
-            <select name="sähköposti" class="huoltajan_select">
-                <option value="">deepirajsekar@gmail.com</option>
-                <option value="">anna@gmail.com</option>
-                <option value="">aliona@gmail.com</option>
-            </select>
-            <div class="gap"> </div>
-            <article class="menneisyys-article"> 
-            
-            
-                <div class="card">
-                    <img class="card-img-top" src="./images/helmet_resized_1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Kypärät</h5>
-                     
-                      <div>
-                        <select name="sähköposti" class="huoltajan_select">
-                            <option value="">Select Size</option>
-                            <option value="">22</option>
-                            <option value="">23</option>
-                            <option value="">24</option>
-                            <option value="">25</option>
-                        </select>
-                      </div>
-                     
-                    </div>
-                  </div>
-                
-                  <div class="card">
-                    <img class="card-img-top" src="images/Boots.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title One</h5>
-                      <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">See more</a>
-                    </div>
-                  </div>
-                
-            
-                  <div class="card">
-                    <img class="card-img-top" src="https://source.unsplash.com/collection/190727/" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title One</h5>
-                      <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">See more</a>
-                    </div>
-                  </div>
-               
-            </article>
+      <h1 align="center">Ilmoittautuminen</h1>
+      <div class="container">
+        <form action="#" name="contact_form">
+          <label for="first_name"
+            >Ilmoittautujan nimi <span id="red">*</span></label
+          >
+          <input
+            name="first_name"
+            type="text"
+            required
+            placeholder="Etunimi Sukunimi"
+          />
+          <br />
+          <label for="last_name">Huoltajan nimi <span id="red">*</span></label>
+          <input
+            name="last_name"
+            type="text"
+            required
+            placeholder="Huoltajan Etunimi Sukunimi"
+          />
+          <br />
+          <label for="email"
+            >Huoltajan sähköposti <span id="red">*</span></label
+          >
+          <input
+            name="email"
+            type="email"
+            required
+            placeholder="matti.meikalainen@esimerkki.com"
+          />
+          <br />
+          <label for="email"
+            >Huoltajan puhelinnumero <span id="red">*</span></label
+          >
+          <input name="email" type="text" required placeholder="0451234567" />
+          <br />
+          <label for="email">Osoite <span id="red">*</span></label>
+          <input name="email" type="text" required placeholder="Katuosoite" />
+          <input
+            name="email"
+            type="text"
+            required
+            placeholder="Postinumero ja toimipaikka"
+          />
+          <br />
+          <label for="email">Ilmoittautujan ikä <span id="red">*</span></label>
+          <input name="email" type="text" required placeholder="Ikä" />
+          <br />
+          <div class="center">
+            <input type="submit" value="Lähetä" />
+          </div>
         </form>
-       
-         </section>
-
-   
-</body>
-
-<footer>
-    <section id="yhteystiedot">
-        <h1>LASTEN LASKETTELUKOULU</h1>
-        <div class="forFlex">
-            <figure>
-                <img src="./images/lasten-laskettelukoulu-logo.png" alt="lasten laskettelukoulu">
-            </figure>
-            <section>
-                <p>OTA YHTEYTTÄ</p>
-                <p>Jussinrinne 1</p>
-                <p>03250 Ojakkala</p>
-                <p>(naviin Pyölintie 16)</p>
-                <p>Puhelin: 0451234567</p>
-                <p>lastenlaskettelukoulu@gmail.com</p>
-            </section>
-        <ul id="somet">
-            <li><i class="fab fa-facebook fa-2x"></i></li>
-            <li><i class="fab fa-youtube fa-2x"></i></li>
-            <li><i class="fab fa-instagram-square fa-2x"></i></li>
-        </ul>
-        </div>
-
+      </div>
     </section>
+    <hr>
+    <!-- väline vuokra -->
+    <section id="välinevuokra">
+      <h1 class="väline_vuokra_heading">Väline Vuokra</h1>
+      <form action="/" id="väline_vuokra_form">
+        <label for="huoltajan_sähköposti" class="huoltajan"
+          >Huoltajan sähköposti <span class="star">*</span>:</label
+        >
+        <select name="sähköposti" class="huoltajan_select">
+          <option value="">deepirajsekar@gmail.com</option>
+          <option value="">anna@gmail.com</option>
+          <option value="">aliona@gmail.com</option>
+        </select>
+        <div class="gap"></div>
+        <article class="menneisyys-article">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./images/helmet_resized_1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kypärät</h5>
 
-</footer>
+              <div>
+                <select name="sähköposti" class="huoltajan_select">
+                  <option value="">Select Size</option>
+                  <option value="">22</option>
+                  <option value="">23</option>
+                  <option value="">24</option>
+                  <option value="">25</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="images/Boots.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title One</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">See more</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/collection/190727/"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title One</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">See more</a>
+            </div>
+          </div>
+        </article>
+      </form>
+    </section>
+    <script src="skripti.js"></script>
+  </body>
+
+  <footer>
+    <section id="yhteystiedot">
+      <h1>LASTEN LASKETTELUKOULU</h1>
+      <div class="forFlex">
+        <figure>
+          <img
+            src="./images/lasten-laskettelukoulu-logo.png"
+            alt="lasten laskettelukoulu"
+          />
+        </figure>
+        <section>
+          <p>OTA YHTEYTTÄ</p>
+          <p>Jussinrinne 1</p>
+          <p>03250 Ojakkala</p>
+          <p>(naviin Pyölintie 16)</p>
+          <p>Puhelin: 0451234567</p>
+          <p>lastenlaskettelukoulu@gmail.com</p>
+        </section>
+        <ul id="somet">
+          <li><i class="fab fa-facebook fa-2x"></i></li>
+          <li><i class="fab fa-youtube fa-2x"></i></li>
+          <li><i class="fab fa-instagram-square fa-2x"></i></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </html>

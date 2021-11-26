@@ -49,11 +49,17 @@ figure img {
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
-    padding: 1rem;
+}
+#info h3 {
+    padding: 20px;
+    color: black;
+    font-size: 1.6rem;
+    line-height: 2.5;
+    padding-top: 40px;
 }
 
 /* väline vuokra */
-.väline_vuokra{
+#välinevuokra {
 
 }
 select {
@@ -172,10 +178,9 @@ select.huoltajan_select {
     color:blue;
   }
   hr {
-    margin: 2rem 0;
-    border: 1px solid skyblue;
+    margin: 2rem;
+    border: 2px solid skyblue;
   }
-}
 header li {
     padding-top: 40px;
 }
