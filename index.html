@@ -8,19 +8,23 @@
     <title>Lasten laskettelukoulu</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="layout.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div>
         <header>
             <ul class="header">
+                <figure>
+                    <img id="logo" src="./images/lasten-laskettelukoulu-logo.png" alt="lasten laskettelukoulun logo">
+                </figure>    
                 <li>
-                    <a href="#home"></a>Home</li>
+                    <a href="#home">Home</a>
                 <li>
                     <a href="#ilmoittautuminen">Ilmoittautuminen</a>
                 </li>
                 <li>
-                    <a href="#sijainti">Sijainti</a>
+                    <a href="#välinevuokra">Välinevuokra</a>
                 </li>
                 <li>
                     <a href="#yhteystiedot">Yhteystiedot</a>
@@ -29,12 +33,40 @@
         </header>
     </div>
     <section id="home">
-        <section>
-            <h1>Lasten Laskettelukoulu</h1>
-            <h2></h2>
+        <div class="opacity">
+            <h1>LASTEN LASKETTELUKOULU</h1>
+            <h2>Tule mukaan viettämään ikimuistoinen hiihtoloma</h2>
+        </div>
+    </section>
 
-        </section>
-
+    <section id="ilmoittautuminen">
+        <h1 align="center">Ilmoittautuminen</h1>
+        <div class="container">
+            <form action="#" name="contact_form">
+                <label for="first_name">Ilmoittautujan nimi <span id="red">*</span></label>
+                <input name="first_name" type="text" required placeholder="Etunimi Sukunimi"/>
+                <br>
+                <label for="last_name">Huoltajan nimi <span id="red">*</span></label>
+                <input name="last_name" type="text" required placeholder="Huoltajan Etunimi Sukunimi"/>
+                <br>
+                <label for="email">Huoltajan sähköposti <span id="red">*</span></label>
+                <input name="email" type="email" required placeholder="matti.meikalainen@esimerkki.com"/>
+                <br>
+                <label for="email">Huoltajan puhelinnumero <span id="red">*</span></label>
+                <input name="email" type="email" required placeholder="0451234567"/>
+                <br>
+                <label for="email">Osoite <span id="red">*</span></label>
+                <input name="email" type="email" required placeholder="Katuosoite"/>
+                <input name="email" type="email" required placeholder="Postinumero ja toimipaikka"/>
+                <br>
+                <label for="email">Ilmoittautujan ikä <span id="red">*</span></label>
+                <input name="email" type="email" required placeholder="Ikä"/>
+                <br>
+                <div class="center">
+                    <input type="submit" value="Lähetä">
+                </div>
+            </form>	
+        </div>
     </section>
     <!-- väline vuokra -->
     <section class="väline_vuokra">
@@ -94,5 +126,31 @@
 
    
 </body>
+
+<footer>
+    <section id="yhteystiedot">
+        <h1>LASTEN LASKETTELUKOULU</h1>
+        <div class="forFlex">
+            <figure>
+                <img src="./images/lasten-laskettelukoulu-logo.png" alt="lasten laskettelukoulu">
+            </figure>
+            <section>
+                <p>OTA YHTEYTTÄ</p>
+                <p>Jussinrinne 1</p>
+                <p>03250 Ojakkala</p>
+                <p>(naviin Pyölintie 16)</p>
+                <p>Puhelin: 0451234567</p>
+                <p>lastenlaskettelukoulu@gmail.com</p>
+            </section>
+        <ul id="somet">
+            <li><i class="fab fa-facebook fa-2x"></i></li>
+            <li><i class="fab fa-youtube fa-2x"></i></li>
+            <li><i class="fab fa-instagram-square fa-2x"></i></li>
+        </ul>
+        </div>
+
+    </section>
+
+</footer>
 
 </html>
