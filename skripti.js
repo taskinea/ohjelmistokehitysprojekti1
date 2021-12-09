@@ -1,6 +1,7 @@
 
 
 
+
 var vaara_button = document.getElementById("vaara_button");
 vaara_button.disabled = true;
 vaara_button.style.background = "grey";
