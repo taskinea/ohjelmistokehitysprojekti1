@@ -236,7 +236,11 @@ select {
   margin-left: 5rem;
   margin-right: 5rem;
  }
-
+ .alert-warning {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
 .message{
   padding-left: 1rem;
 }
@@ -409,7 +413,51 @@ footer li {
 }
 
 
-@media only screen and (min-width: 426px) {
+
+/*media queries for responsive web design*/
+
+@media only screen and (min-width : 1051px) {
+  /* Medium desktop*/
+
+
+
+}
+
+
+@media only screen and (max-width : 1050px) and (min-width : 651px){
+
+   /* Small desktop */
+
+
+}
+
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+     /* Tablet view */
+
+
+}
+
+@media only screen and (max-width : 480px)  and (min-width : 320px){
+       /* Smartphone view */
+        
+
+       
+
+       .menneisyys-article{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+       }
+       .menneisyys-article > *{
+         flex-grow: 1;
+         flex-basis:0;
+       }
+
+   
+}
+
+
    
     
 
