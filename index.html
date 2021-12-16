@@ -6,79 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lasten laskettelukoulu</title>
     <!-- 1.Bootstrapin css säännöt suoritetaan ensin-->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="layout.css" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function reserve(){
-        document.getElementById("alert-box").style.display = "block";
-      }
+    /> -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
-
-    //  // var checkbox_1 = document.getElementById("checkbox_1");
-    //   var checkbox_2 = document.getElementById("checkbox_2");
-    //   var checkbox_3 = document.getElementById("checkbox_3");
-
-
-    //   var vaara_button = document.getElementById("vaara_button"),
-    //       checkbox_1 = document.getElementById("checkbox_1"),
-
-
-    //       disableSubmit = function(e) {
-    //     vaara_button.disabled = this.checked
-    // };
-
-    //  checkbox_1.addEventListener('change', disableSubmit);
-    </script>
   </head>
 
   <body>
     <div>
       <header>
+        
         <ul class="header">
           <figure>
-            <img
+            <img  
               id="logo"
-              src="./images/lasten-laskettelukoulu-logo.png"
+              src="./images/lasten-laskettelukoulu-logo-white.png"
               alt="lasten laskettelukoulun logo"
             />
           </figure>
           <li>
-            <a href="#info">Info</a>
+            <a href="#anchor">INFO</a>
           </li>
           <li>
-            <a href="#ilmoittautuminen">Ilmoittautuminen</a>
+            <a href="#anchor1">ILMOITTAUTUMINEN</a>
           </li>
           <li>
-            <a href="#välinevuokra">Välinevuokra</a>
+            <a href="#anchor2">VÄLINEVUOKRA</a>
           </li>
           <li>
-            <a href="#yhteystiedot">Yhteystiedot</a>
+            <a href="#anchor3">YHTEYSTIEDOT</a>
           </li>
         </ul>
+      
       </header>
     </div>
     <section id="home">
       <div class="opacity">
         <h1>LASTEN LASKETTELUKOULU</h1>
-        <h2>Tule mukaan viettämään ikimuistoinen hiihtoloma</h2>
+        <h2>Tule mukaan viettämään ikimuistoinen hiihtoloma!</h2>
       </div>
     </section>
     <section id="info">
+      <span id="anchor" class="anchor"></span>
       <h3>
         Lasten Laskettelukoulu järjestetään hiihtolomaviikolla 8, 21.2.2022 –
-        25.2.2021, Peuramaan hiihtokeskuksessa, Kirkkonummella ja sopii 6-8
+        25.2.2022, Peuramaan hiihtokeskuksessa Kirkkonummella. Laskettelukoulu on sopiva 6-8
         vuotiaille aloittelijoille. Laskettelukoulu on maanantaista perjantaihin
         klo 09.30-12.00. Hinta on 290e ja hintaan sisältyy rinnelippu
         opetustuntien ajaksi sekä tapaturmavakuutus. Laskettelukouluun voi
@@ -88,10 +66,13 @@
     </section>
     <hr />
 
+
+
     <section id="ilmoittautuminen">
-      <h1 align="center">Ilmoittautuminen</h1>
+       <span id="anchor1" class="anchor"></span>
+      <h1 align="center">ILMOITTAUTUMINEN</h1>
       <div class="container">
-        <form action="#" name="contact_form">
+        <form action="#" name="contact_form" id="form">
           <label for="first_name"
             >Ilmoittautujan nimi <span id="red">*</span></label
           >
@@ -101,6 +82,7 @@
             required
             placeholder="Etunimi Sukunimi"
           />
+
           <br />
           <label for="last_name">Huoltajan nimi <span id="red">*</span></label>
           <input
@@ -123,7 +105,7 @@
           <label for="email"
             >Huoltajan puhelinnumero <span id="red">*</span></label
           >
-          <input name="email" type="text" required placeholder="0451234567" />
+          <input name="email" type="text"  placeholder="0451234567" />
           <br />
           <label for="email">Osoite <span id="red">*</span></label>
           <input name="email" type="text" required placeholder="Katuosoite" />
@@ -142,147 +124,166 @@
           </div>
         </form>
       </div>
-    </section>
-    <hr>
-    <!-- väline vuokra -->
-    <section id="välinevuokra">
-      <h1 class="väline_vuokra_heading">Väline Vuokra</h1>
-      <form action="/" id="väline_vuokra_form">
-        <label for="huoltajan_sähköposti" class="huoltajan"
-          >Huoltajan sähköposti <span class="star">*</span>:</label
-        >
-        <select name="sähköposti" class="huoltajan_select">
-          <option value="">deepirajsekar@gmail.com</option>
-          <option value="">anna@gmail.com</option>
-          <option value="">aliona@gmail.com</option>
-        </select>
-        <div class="gap"></div>
-        <article class="menneisyys-article">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="./images/helmet_resized_1.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Kypärät</h5>
-
-              <div>
-                <select name="Kypärät_koko" class="koko">
-                  <option value="">Valitse koko</option>
-                  <option value="">47-51</option>
-                  <option value="">51-54</option>
-                  <option value="">54-58</option>
-                </select>
-              </div>
-              <p class = "price"> 30 &euro;</p>
-              <div>
-                <input class="form-check-input" type="checkbox" id="checkbox_1" value="" aria-label="...">
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/Boots.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Monot</h5>
-              <div>
-                <select name="monot_koko" class="koko">
-                    <option value="">Valitse koko</option>
-                    <option value="">15 (25)</option>
-                    <option value="">16 (26.5)</option>
-                    <option value="">17 (28)</option>
-                    <option value="">18 (29.5)</option>
-                    <option value="">19 (31)</option>
-                    <option value="">20 (32.5)</option>
-                    <option value="">21 (34)</option>
-                </select>
-              </div>
-              <p class="price">30 &euro;</p>
-              <div>
-                <input class="form-check-input" type="checkbox" id="checkbox_2" value="" aria-label="...">
-              </div> 
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top sukset" src="images/Sukset.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Sukset</h5>
-              <div >
-                <select name="sukset_koko" class="koko">
-                    <option value="">Valitse pituus</option>
-                    <option value="">116</option>
-                    <option value="">120</option>
-                    <option value="">128</option>
-                    <option value="">134</option>
-                </select>
-              </div>
-              <p class="price"> 30 &euro;</p>
-              <div>
-                <input class="form-check-input" type="checkbox" id="checkbox_3" value="" aria-label="...">
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- vaara button -->
-        <div>
-          <button type="button" class="btn btn-primary btn-sm"  form="väline_vuokra_form" value="Vaara" onclick="reserve()" id="vaara_button">Varaa</button>
-       </div>
-        <!-- alert box -->
-       <div id="alert-box">
+      
+        <div id="alert-box-1" >
           <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
               <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
               </symbol>
-              <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-              </symbol>
-              <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </symbol>
+            
             </svg>
-            <div class="alert alert-success d-flex align-items-center" role="alert">
+            <div class="alert alert1 alert-success d-flex align-items-center" role="alert">
               <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-              <div class="message">
-                  Tilaus vahvistettu!
+              <div class="message"  id="msg">
+                  Ilmoittautuminen on vastaanotettu!
+              </div>
+            </div>
+         </div>
+      
+    </section>
+    <hr>
+    <!-- väline vuokra -->
+    <section id="väline_vuokra">
+      <span id="anchor2" class="anchor"></span>
+        <!-- heading -->
+        <h1 class="väline_vuokra_heading">VÄLINEVUOKRA</h1>
+        <!-- form for email amd cards -->
+        <form action="/" id="väline_vuokra_form" >
+            <label for="huoltajan_sähköposti" class="huoltajan">Huoltajan sähköposti: </label>
+            <select name="sähköposti" class="huoltajan_select" id="posti" onchange="mailSelect()">
+                <option value="">Valitse sähköposti osoite</option>
+                <option value="deepirajsekar@gmail.com">deepirajsekar@gmail.com</option>
+                <option value="anna@gmail.com">anna@gmail.com</option>
+                <option value="aliona@gmail.com">aliona@gmail.com</option>
+            </select>
+            <div class="gap"> </div>
+            <article class="menneisyys-article"> 
+                <div class="card">
+                  
+                    <img class="card-img-top" src="./images/helmet_resized_1.jpg" alt="Card image cap">
+                  
+                    <div class="card-body">
+                      <h5 class="card-title">Kypärät</h5>   
+                      <div>
+                        <select name="Kypärät_koko" class="koko"   id="ky_koko" onchange="selectKoko()">
+                            <option value=''>Valitse Koko</option>
+                            <option value='47-51'>47-51</option>
+                            <option value='51-54'>51-54</option>
+                            <option value='54-58'>54-58</option>
+                            
+                        </select>
+                      </div>
+                      <p class="price" id="kyky_price"> Hinta</p>
+                     
+                    </div>
+                  </div>
+                
+                  <div class="card">
+                    <img class="card-img-top" src="images/Boots.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Monot</h5>
+                      <div>
+                        <select name="monot_koko" class="koko" id="monot_koko"  onchange="selectKoko()">
+                            <option value="">Valitse koko</option>
+                            <option value="15">15(25)</option>
+                            <option value="16">16(26.5)</option>
+                            <option value="17">17(28)</option>
+                            <option value="18">18(29.5)</option>
+                            <option value="19">19(31)</option>
+                            <option value="20">20(32.5)</option>
+                            <option value="21">21(34)</option>
+                        </select>
+                      </div>
+                      <p class="price" id="monot_price"> Hinta</p>
+                    
+                    </div>
+                  </div>
+                
+            
+                  <div class="card">
+                    <img class="card-img-top sukset" src="images/Sukset.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Sukset</h5>
+                      <div >
+                        <select name="sukset_koko" class="koko" id="sukset_koko" onchange="selectKoko()">
+                            <option value="">Valitse pituus</option>
+                            <option value="116">116</option>
+                            <option value="120">120</option>
+                            <option value="128">128</option>
+                            <option value="134">134</option>
+                        </select>
+                      </div>
+                      <p class="price" id="sukset_price">Hinta</p>
+                     
+                    </div>
+                  </div>
+            </article>
+         <!-- vaara button -->
+         <section>
+         
+            <button type="button" class="btn btn-primary btn-sm"    form="väline_vuokra_form" value="Vaara" onclick="reserve()" id="vaara_button">Varaa</button>
+         
+       
+       
+    </section>
+          <!-- alert box -->
+         
+         <div id="alert-box" >
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+              
+              </svg>
+              <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div class="message" >
+                    Tilaus on vastaanotettu! Saat tilausvahvistuksen ja maksutiedot osoitteeseen <span ><a href="https://www.google.com/gmail"  target="blank"
+                      id="mail"></a></span>. Kiitos! 
                 </div>
               </div>
            </div>
-      </form>
-    </section>
+           </div>
+        </form>
+       
+         </section>
 
+   
+         <footer>
+          <section id="yhteystiedot">
+            <span id="anchor3" class="anchor"></span>
+            <h1>LASTEN LASKETTELUKOULU</h1>
+            <div class="forFlex">
+              <figure>
+                <img
+                  src="./images/lasten-laskettelukoulu-logo-blue.png"
+                  alt="lasten laskettelukoulu"
+                />
+              </figure>
+              <section>
+                <p><span class="strong">OTA YHTEYTTÄ</span></p>
+                <p>Jussinrinne 1</p>
+                <p>02480 Kirkkonummi</p>
+                <p>(naviin Pyölintie 16)</p>
+                <p>Puhelin: 0451234567</p>
+                <p>lastenlaskettelukoulu@gmail.com</p>
+              </section>
+              <ul>
+                <a href="https://www.facebook.com/">
+                  <li id="somet1"><i class="fab fa-facebook fa-2x"></i></li>
+                </a>
+                <a href="https://www.youtube.com/">
+                  <li id="somet2"><i class="fab fa-youtube fa-2x"></i></li>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <li id="somet3"><i class="fab fa-instagram-square fa-2x"></i></li>
+                </a>
+              </ul>
+            </div>
+          </section>
+        </footer>
     <script src="skripti.js"></script>
   </body>
 
-  <footer>
-    <section id="yhteystiedot">
-      <h1>LASTEN LASKETTELUKOULU</h1>
-      <div class="forFlex">
-        <figure>
-          <img
-            src="./images/lasten-laskettelukoulu-logo.png"
-            alt="lasten laskettelukoulu"
-          />
-        </figure>
-        <section>
-          <p>OTA YHTEYTTÄ</p>
-          <p>Jussinrinne 1</p>
-          <p>03250 Ojakkala</p>
-          <p>(naviin Pyölintie 16)</p>
-          <p>Puhelin: 0451234567</p>
-          <p>lastenlaskettelukoulu@gmail.com</p>
-        </section>
-        <ul id="somet">
-          <li><i class="fab fa-facebook fa-2x"></i></li>
-          <li><i class="fab fa-youtube fa-2x"></i></li>
-          <li><i class="fab fa-instagram-square fa-2x"></i></li>
-        </ul>
-      </div>
-    </section>
-  </footer>
+ 
 </html>

@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&display=swap');
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Domine", serif;
+  font-family: 'Arima Madurai', cursive;
   font-size: 1.6rem;
   background-color: #e3eaf0;
 }
@@ -13,6 +12,11 @@ body {
 header {
   color: white;
   padding: 0px;
+}
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
 }
 
 figure {
@@ -24,46 +28,59 @@ figure img {
 #logo {
   max-width: 100%;
   height: 100px;
+  padding-left: 20px;
 }
 
 #home {
-  text-align: center;
+  /* text-align: center;
   padding: 30rem;
+  background-image: url(images/imgonline-com-ua-Resize-3WGwn5fzRa3.jpg); */
+  text-align: center;
   background-image: url(images/imgonline-com-ua-Resize-3WGwn5fzRa3.jpg);
+    object-fit: cover;
+    max-width: 100%;
+    height: 600px;
+    vertical-align: middle;
+    background-position: center;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  opacity: 0.9;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100px;
   color: white;
-  background-color: #acb4bebe;
+  background-color: #07589a;
+  z-index: 9999;
 }
 
 .header > * {
   flex-grow: 1;
-  flex-basis: 0;
-  text-align: center;
+  /* flex-basis: 0;
+
+  text-align: center; */
 }
 #info h3 {
   padding: 20px;
-  color: black;
+  color: #004b88;
   font-size: 1.6rem;
   line-height: 2.5;
   padding-top: 40px;
+  font-weight:bold;
 }
+
+
 /* väline vuokra */
 #väline_vuokra {
+  font-family: 'Arima Madurai', cursive;
+  color: #004b88;
 }
 select {
   /* styling */
   background-color: white;
-
   border-radius: 4px;
   display: inline-block;
   font: inherit;
@@ -84,45 +101,71 @@ select {
   text-align: center;
   padding: 2rem;
   margin: 2rem;
-  font-size: 3rem;
-  color: #00008b;
+  font-size: 2rem;
+  color: #004b88;
+  font-family: 'Arima Madurai', cursive;
+  font-weight: bold;
 }
 
 /* arrows */
 /*Select arrows colors and styles*/
+#posti{ /*mail select*/
+   margin-left: 1rem;
+   padding-left: 1rem;
+}
 
-.koko {
-  font-size: 1.2rem;
+.koko{
+  color: #07589a;
+  font-size: 1rem;
+  font-weight: 600;
+  background-position:
+  calc(100% - 10px) calc(1em + -1px),
+  calc(100% - 5px) calc(1em + -1px),
+  100% 0;
+  background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
 
-  background-position: calc(100% - 10px) calc(1em + -1px),
-    calc(100% - 5px) calc(1em + -1px), 100% 0;
 }
 select {
-  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+  font-size: 1.4rem;
+  color: #07589a;
+  background-image:
+    linear-gradient(46deg, transparent 50%, white 50%),
     linear-gradient(135deg, white 50%, transparent 50%),
-    linear-gradient(to right, #000c66, #000c66);
-  background-position: calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px), 100% 0;
-  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    linear-gradient(to right, #07589a, #07589a);
+  background-position:
+    calc(100% - 19px) calc(1em + 2px),
+    calc(100% - 14px) calc(1em + 2px),
+    100% 0;
+    background-size:
+      8px 6px,
+      6px 7px,
+      2.5em 2.5em;
   background-repeat: no-repeat;
 }
-
 /*each size select box */
 
 #väline_vuokra_form {
   text-align: center;
-}
-
-.huoltajan {
+  margin: 10px;
 }
 
 .gap {
   padding: 2rem;
 }
 
-.star {
-}
-
+/*anchor*/ /*for anchor tag in nav bar to be landed in correct position*/
+ .anchor{
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  top: -100px;
+  left: 0;
+  visibility: hidden;
+} 
 /*cards*/
 
 .menneisyys {
@@ -141,7 +184,7 @@ select {
 .menneisyys-article > * {
   flex-grow: 1;
   flex-basis: 0;
-  border: solid 0.25rem lightgrey;
+  border: solid 0.25rem #6eb0e6;
   margin: 1rem 0.5rem;
   border-radius: 1rem;
 }
@@ -154,7 +197,7 @@ select {
 .card-img-top {
   /* width: 100%; */
   height: 15vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 .sukset {
   padding-bottom: 0.25rem;
@@ -167,20 +210,20 @@ select {
 .card-text {
   font-size: 1.5rem;
 }
-.btn-primary {
-  font-size: 1.5rem;
-  color: blue;
-}
+
 .price {
   padding: 1rem;
+  font-weight: bold;
 }
+
+/*Button vaara*/
 .btn-primary {
   color: #fff;
-  background-color: #000c66;
-  border-color: #000c66;
+  background-color: #07589a;
+  border-color: #07589a;
 }
 .btn-sm {
-  padding: 0.8rem 2.5rem;
+  padding: 12px 24px;
   font-size: 1.5rem;
   line-height: 1;
   border-radius: 0.4rem;
@@ -191,13 +234,22 @@ select {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     margin-top: 30px;
     margin-bottom: 40px;
+    background:#07589a !important ;
+    border: #07589a !important;
 }
 
+
+.button{
+  display:inline-block;
+}
 /*Alert box*/
 
 #alert-box {
   display: none;
   padding-top: 1rem;
+}
+#alert-box-1{
+  display: none;
 }
 .align-items-center {
   align-items: center !important;
@@ -211,6 +263,7 @@ select {
   border-color: #badbcc;
 }
 
+
 .alert {
   position: relative;
   padding: 1rem 1rem;
@@ -221,17 +274,30 @@ select {
   margin-right: 5rem;
 }
 
+.alert1{
+  margin-top: 1rem;
+}
+
 .message {
   padding-left: 1rem;
+  line-height: 2rem;
+}
+
+#mail{
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+  color: black;
 }
 button {
   overflow: visible;
 }
-
+  /*Header alkaa*/
 hr {
   margin: 2rem 0;
   border: 1px solid skyblue;
 }
+
 
 /*Header alkaa*/
 
@@ -240,32 +306,43 @@ header li {
 }
 a {
   list-style: none;
-  color: black;
+  color: white;
   text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
 
 .opacity {
   color: black;
-  background-color: #acb4be93;
-  padding: 50px;
+  /* background-color: #acb4be93; */
+  padding: 30px;
   line-height: 2;
   border-radius: 25px;
   display: inline-block;
+  margin-top: 320px;
 }
 .opacity h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3.5rem;
+  color: white;
 }
 
 /* HERE STARTS ILMOITTAUTUMINEN FORM CSS RULES */
 
 #ilmoittautuminen {
-  margin: 10px;
+  margin:auto  10px;
   padding-top: 10px;
+}
+form {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 #ilmoittautuminen h1 {
   font-weight: bold;
   font-size: 2rem;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: #004b88;
 }
 /* Remove outline of all elements on focus */
 *:focus {
@@ -275,6 +352,8 @@ h3 {
   text-align: center;
   color: white;
   margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #red {
@@ -282,17 +361,18 @@ h3 {
 }
 
 /* Add styles to 'container' class */
-.container {
+/* .container {
   padding: 12px 24px 24px 24px;
   margin: 48px 12px;
   border-radius: 4px;
-}
+} */
 
 /* Add styles to 'label' selector */
 label {
-  font-size: 0.85em;
+  font-size: 1.6rem;
   margin-left: 12px;
-  color: black;
+  color: #07589a;
+  font-weight: bold;
 }
 
 /* Add styles to 'input' and 'textarea' selectors */
@@ -307,6 +387,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-size: 15px;
 }
 
 /* Add styles to show 'focus' of selector */
@@ -318,7 +399,7 @@ textarea:focus {
 
 /* Add styles to the submit button */
 input[type="submit"] {
-  background: #000c66;
+  background: #07589a;
   margin: 0 auto;
   outline: 0;
   color: white;
@@ -360,14 +441,17 @@ footer {
   background-color: white;
   padding-top: 30px;
   display: block;
+  color: #004b88;
 }
 footer h1 {
   font-weight: bold;
   padding-bottom: 30px;
   font-size: 2rem;
+  padding-top: 20px;
 }
 footer p {
   padding-top: 25px;
+  font-weight: bold;
 }
 footer figure img {
   max-width: 50%;
@@ -383,13 +467,176 @@ footer figure img {
 }
 footer ul {
   list-style: none;
+  padding-bottom: 20px;
 }
 footer li {
   display: inline-block;
 }
-#somet {
+.strong {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+/*facebook icon*/
+#somet1 {
   padding-bottom: 40px;
   letter-spacing: 20px;
-  color: #2a86d1;
-  padding-top: 20px;
+  color: #2d48be;
+  padding: 20px;
+}
+
+/*youtube icon*/
+#somet2 {
+  padding-bottom: 40px;
+  letter-spacing: 20px;
+  color: #be1111;
+  padding: 20px;
+}
+/*insta icon*/
+
+#somet3 {
+  padding-bottom: 40px;
+  letter-spacing: 20px;
+  color: #700c6b;
+  padding: 20px;
+}
+ /*Alert for form files*/
+
+ /* .name{
+   display: none;
+   
+   font-size: 1rem;
+   color: red;
+   padding-left: 1rem;
+ } */
+
+/*media queries for responsive web design*/
+@media only screen and (max-width: 426px) {
+  #home {
+    height: 550px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+  .header > * {
+  }
+  a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  #logo {
+    display: none;
+  }
+  .opacity {
+    color: black;
+    /* background-color: #acb4be93; */
+    padding: 20px;
+    line-height: 2;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 300px;
+    max-width: 300px
+  }
+  .opacity h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .opacity h2 {
+    font-size: 2rem ;
+  }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 560px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  .header > * {
+  }
+    a {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  #logo {
+    display: none;
+  }
+  .opacity {
+    color: black;
+    /* background-color: #acb4be93; */
+    padding: 20px;
+    line-height: 2;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 320px;
+    max-width: 300px;
+  }
+  .opacity h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .opacity h2 {
+    font-size: 2.5rem ;
+  }
+
+}
+@media only screen  and (max-width : 426px) {
+
+  /* Smartphone view */
+  select{
+    background-position: calc(100% - 17px) calc(1em + 2px), calc(100% - 12px) calc(1em + 2px), 100% 0;
+    background-size: 10px 5px, 5px 5px, 2.5em 2.5em;
+  }
+  .koko{
+   font-size: 1.2rem;
+   font-weight: 600;
+   background-position: calc(100% - 14px) calc(1em + 0px), calc(100% - 9px) calc(1em + 0px), 100% 0;
+   color:#004b88;
+  }
+  .btn-sm {
+   padding: 1.8rem 4.5rem;
+   font-size: 2rem;
+   line-height: 1;
+   border-radius: 0.4rem;
+}
+  .menneisyys-article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .menneisyys-article > *{
+    flex-grow: 1;
+    flex-basis:0;
+  }
+  .huoltajan{
+    font-size: 1.8rem;
+  }
+ 
+  #vaara_button{
+   font-size:1.4rem ;
+   padding: 1.2rem;
+
+  }
+#posti{ /*mail select*/
+  margin-top: 1rem;
+}
+
+  /* #perutta_button{
+    font-size:1.4rem ;
+   padding: 1.2rem;
+  } */
+ 
+}
+
+@media only screen  and (min-width : 426px) and (max-width : 1051px){
+
+  .koko{
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-position: calc(100% - 14px) calc(1em + 0px), calc(100% - 9px) calc(1em + 0px), 100% 0;
+    color: #004b88;
+   }
+
+
 }
